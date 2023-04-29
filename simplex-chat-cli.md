@@ -25,12 +25,13 @@ brew search openssl
 
 You should see something like the following
 
-
+```
 ==> Formulae
 glib-openssl    openssl@1.1 ✔   openssl@3 ✔     openssl@3.0     openslp         openssh         opensaml        opensc          open-sp         openfst         opencsg         openmsx
 
 ==> Casks
 openmsx                                                            opensc                                                             opensim
+```
 
 If you didn't installed openssl yet or you have installed only openssl@1.1 I suggest to install openssl 3 via homebrew as follows:
 
@@ -46,10 +47,11 @@ brew search llvm
 ```
 You should see something like the following
 
+```
 ==> Formulae
 cargo-llvm-lines                 llvm@11                          llvm@13 ✔                        llvm@15                          llvm@8                           spirv-llvm-translator
 llvm ✔                           llvm@12                          llvm@14                          llvm@7                           llvm@9                           wllvm
-
+```
 
 If you didn't installed llvm yet or you have installed only llvm@13, I suggest to install llvm@13 via homebrew as follows:
 
