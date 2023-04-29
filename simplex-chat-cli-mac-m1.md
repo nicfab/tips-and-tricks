@@ -1,7 +1,7 @@
-# How to install Simplex Chat CLI on Mac M1
+# How to install Simplex Chat CLI on a Mac with M1
 
 
-You can find the official instructions to install SimpleX Chat CLI on Mac here: https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md#linux-and-macos
+You can find the official instructions to install SimpleX Chat CLI on MacOS on their [GitHub repository](https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md#linux-and-macos)
 
 However, since I could not install **SimpleX Chat CLI** with those instructions, I modified some steps based on some suggestions in the issues. 
 
