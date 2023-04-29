@@ -23,13 +23,13 @@ cd simplex-chat
 git checkout stable
 ```
 
-Verify what version of openssl you have installed by running:
+3. Verify what version of openssl you have installed by running:
 
 ```
 brew search openssl
 ```
 
-You should see something like the following
+- You should see something like the following
 
 ```
 ==> Formulae
@@ -39,19 +39,20 @@ glib-openssl    openssl@1.1 ✔   openssl@3 ✔     openssl@3.0     openslp     
 openmsx                                                            opensc                                                             opensim
 ```
 
-If you didn't installed openssl yet or you have installed only openssl@1.1 I suggest to install openssl 3 via homebrew as follows:
+- If you didn't installed openssl yet or you have installed only openssl@1.1 I suggest to install openssl 3 via homebrew as follows:
 
 ```
 brew install openssl@3
 ```
 
-You should previously also check whether you have installed llvm and what version; you can proceed via Homebrew by checking as follows
+4. You should previously also check whether you have installed **llvm** and what version; you can proceed via Homebrew by checking as follows
 
 
 ```
 brew search llvm
 ```
-You should see something like the following
+
+- You should see something like the following
 
 ```
 ==> Formulae
@@ -59,45 +60,45 @@ cargo-llvm-lines                 llvm@11                          llvm@13 ✔   
 llvm ✔                           llvm@12                          llvm@14                          llvm@7                           llvm@9                           wllvm
 ```
 
-If you didn't installed llvm yet or you have installed only llvm@13, I suggest to install llvm@13 via homebrew as follows:
+- If you didn't installed llvm yet or you have installed only llvm@13, I suggest to install llvm@13 via homebrew as follows:
 
 ```
 brew install llvm@13
 ```
 
-Be careful after the installation to add the PATH to the file `.zshrc`.
+5. Be careful after the installation to add the PATH to the file `.zshrc`.
 
 Open `.zshrc` and control that the line was correctly added.
 Rember that if you modify the file, after exiting from the editor, it's necessary to run `source .zshrc`.
 
-Then, be sure to stay under the folder `simplex-chat` and run
+6. Then, be sure to stay under the folder `simplex-chat` and run
 
 ```
 cp scripts/cabal.project.local.mac cabal.project.local
 ```
 
-Open cabal.project.local to make some changes, and precisely be sure that in the following lines there is openssl@3 as follows:
+7. Open cabal.project.local to make some changes, and precisely be sure that in the following lines there is openssl@3 as follows:
 
 ```
  extra-include-dirs: /opt/homebrew/opt/openssl@3/include
     extra-lib-dirs: /opt/homebrew/opt/openssl@3/lib
 ```
 
-Check the correct path of the file cabal.project under the folder simplex-chat, and then open the file `Controller.hs` which is under `simplex-chat/src/Simplex/Chat/`. You can jump directly to the line that should be modified by running:
+8. Check the correct path of the file cabal.project under the folder simplex-chat, and then open the file `Controller.hs` which is under `simplex-chat/src/Simplex/Chat/`. You can jump directly to the line that should be modified by running:
 
 ```
 nano +77 Controller.hs
 ```
 
-Modify the PATH that is after `B.readFile` with the correct one where is the file `cabal.project`; it should be something like `/Users/foo/simplex-chat/cabal.project`.
+9. Modify the PATH that is after `B.readFile` with the correct one where is the file `cabal.project`; it should be something like `/Users/foo/simplex-chat/cabal.project`.
 
-In the end run:
+10. In the end run:
 
 ```
 cabal update
 ```
 
-and then
+11. and then
 
 ```
 cabal install
