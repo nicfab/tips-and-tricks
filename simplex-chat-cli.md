@@ -1,5 +1,11 @@
 # How to install Simplex Chat CLI on Mac M1
 
+
+You can find the official instructions to install SimpleX Chat CLI on Mac here: https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md#linux-and-macos
+
+However, since I could not install SimpleX Chat with those instructions I modified some steps, also based on some suggestions in the issues. I succeeded to install SimpleX Chat CLI with the steps below.
+
+
 You should be able to install SimpleX Chat CLI by following the steps.
 
 1. Install [Haskell GHCup](https://www.haskell.org/ghcup/), GHC 8.10.7 and cabal:
