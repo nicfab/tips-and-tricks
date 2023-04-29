@@ -78,7 +78,7 @@ Rember that if you modify the file after exiting from the editor, it's necessary
 cp scripts/cabal.project.local.mac cabal.project.local
 ```
 
-7. Open cabal.project.local to make some changes, and precisely be sure that in the following lines, there is `openssl@3 as follows:
+7. Open cabal.project.local to make some changes, and precisely be sure that in the following lines, there is `openssl@3` as follows:
 
 ```
  extra-include-dirs: /opt/homebrew/opt/openssl@3/include
