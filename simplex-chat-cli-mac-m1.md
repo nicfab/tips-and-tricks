@@ -85,7 +85,7 @@ cp scripts/cabal.project.local.mac cabal.project.local
     extra-lib-dirs: /opt/homebrew/opt/openssl@3/lib
 ```
 
-8. Check the correct path of the file cabal.project under the folder simplex-chat, and then open the file `Controller.hs`, under `simplex-chat/src/Simplex/Chat/`. You can jump directly to the line that should be modified by running:
+8. This is a ***workaround*** (waiting for the source code to be modified=. Check the correct path of the file cabal.project under the folder simplex-chat, and then open the file `Controller.hs`, under `simplex-chat/src/Simplex/Chat/`. You can jump directly to the line that should be modified by running:
 
 ```
 nano +77 Controller.hs
