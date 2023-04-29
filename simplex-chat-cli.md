@@ -7,7 +7,7 @@ However, since I could not install **SimpleX Chat CLI** with those instructions 
 
 I succeeded to install SimpleX Chat CLI with the steps below.
 
-You should be able to install SimpleX Chat CLI by following the steps.
+***
 
 1. Install [Haskell GHCup](https://www.haskell.org/ghcup/), GHC 8.10.7 and cabal:
 2. Build the project by the following commands:
